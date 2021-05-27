@@ -15,6 +15,11 @@ html {
 	animation: transitionIn 1s;
 }
 
+p {
+	font-family: "Montserrat";
+	line-height: 25px;
+}
+
 ul {
 	list-style: none;
 }
