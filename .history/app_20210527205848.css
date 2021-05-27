@@ -32,6 +32,8 @@ article {
 	text-decoration: underline;
 	font-weight: 900;
 	font-size: 20px;
+	padding-bottom: 5px;
+	background-color: #ccc;
 }
 
 .card-subtitle {
@@ -60,7 +62,7 @@ article {
 }
 
 #leftwindow {
-	padding: 80px 20px 0px 0px;
+	padding: 40px 20px 0px 0px;
 	border-right: 2px black solid;
 	min-width: 250px;
 }

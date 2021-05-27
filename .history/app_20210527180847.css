@@ -17,25 +17,25 @@ html {
 
 p {
 	font-family: "Roboto Condensed", sans-serif;
-	line-height: 25px;
+	line-height: 20px;
 }
 
 ul {
 	list-style: none;
 }
-article {
-	border-bottom: 3px black solid;
+
+.card {
+	background-color: black;
 }
 
 .card-title {
 	font-family: "Montserrat";
+	color: blue;
 	text-decoration: underline;
 	font-weight: 900;
 	font-size: 20px;
-}
-
-.card-subtitle {
-	color: red;
+	padding-bottom: 10px;
+	border: none;
 }
 
 .footer {
@@ -51,7 +51,7 @@ article {
 /*  ********************* resume work */
 
 #wholewindow {
-	border: 5px black solid;
+	border: 2px black solid;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -60,15 +60,14 @@ article {
 }
 
 #leftwindow {
-	padding: 80px 20px 0px 0px;
-	border-right: 2px black solid;
+	border-right: 5px black solid;
+	padding: 20px 20px 0px 0px;
 	min-width: 250px;
 }
 
 #rightwindow {
-	padding: 20px 0px 0px 20px;
+	padding-top: 20px;
 	min-width: 250px;
-	background-color: white;
 }
 
 #namebox {
@@ -78,7 +77,8 @@ article {
 	align-items: center;
 	text-align: center;
 	font-family: "Montserrat";
-	border: none;
+	border: 2px black solid;
+	border-radius: 2%;
 }
 
 #profileimg {
@@ -99,9 +99,15 @@ article {
 	border-top: 1px black solid;
 }
 
-#managementskillsitem p {
-	line-height: 20px;
-	text-align: center;
+.card-subtitle {
+	color: red;
+}
+
+#itskillsitem,
+#managementskillsitem {
+	border-bottom: 1px black solid;
+	margin-top: 3px;
+	margin-bottom: 3px;
 }
 
 #tag {
@@ -111,8 +117,10 @@ article {
 	text-align: left;
 }
 
-#tag span {
-	text-decoration: underline;
+#ans {
+	font-family: "Ubuntu";
+	font-weight: 400;
+	text-align: left;
 }
 
 li img {
@@ -122,23 +130,8 @@ li img {
 	margin-right: 5px;
 }
 
-#itskillsbox,
-#educationbox {
-	border: none;
-}
-
-#itskillsitem {
-	border-bottom: 1px black solid;
-	padding: 7px 0px 7px 0px;
-}
-
-#que {
-	font-family: "Quicksand";
-	text-decoration: underline;
-	font-size: 16px;
-	font-weight: 800;
-	display: flex;
-	align-items: center;
+#contactbox {
+	border-bottom: 2px black solid;
 }
 
 #contactitem {
@@ -149,20 +142,15 @@ li img {
 	text-align: end;
 }
 
-#contactitem div a {
-	text-decoration: none;
-	color: black;
-}
-
-#contactitem div a:hover {
-	text-decoration: underline;
-	color: blue;
-}
-
 #contactitem .col-11 span {
 	font-weight: 600;
 	color: blue;
 	text-decoration: underline;
+}
+
+#contactitem .col-11 a span {
+	color: black;
+	text-decoration: none;
 }
 
 #educationtitle {
@@ -170,10 +158,11 @@ li img {
 	font-weight: 200;
 }
 
-#educationitem {
+#educationitem,
+#projectitem {
 	margin-bottom: 10px;
-	padding: 10px 0px 10px 10px;
-	border-left: 4px black solid;
+	padding-bottom: 10px;
+	border-bottom: 1px black solid;
 }
 
 #educationbox {
@@ -187,7 +176,7 @@ li img {
 #institutename {
 	text-decoration: underline;
 	font-weight: 800;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 #timestamp {
@@ -211,6 +200,7 @@ li img {
 
 #projecttitle {
 	font-family: "Red Hat Display";
+	font-weight: 400;
 }
 
 #projectdetails {
